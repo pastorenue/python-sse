@@ -1,0 +1,10 @@
+services:
+  sse-backend:
+    container_name: sse-backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5400:5400
+    volumes:
+      - .:/app
